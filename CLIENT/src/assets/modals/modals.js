@@ -27,6 +27,19 @@ export const SuccessDeleteCart = () => {
     })
 }
 
+export const SuccessBuy = () => {
+    alert.fire({
+        title:"Selección de productos exitosa",
+        html: `<div class="modalExpert">
+                    <span>Esto simula el éxito de la selección final de productos</span> 
+                    <hr>
+                </div>`,
+        icon: "success",
+        showConfirmButton: false,
+        showCloseButton: true,
+    })
+}
+
 export const alertError = () =>{
     alert.fire({
         title:"Lo sentimos",
