@@ -56,7 +56,7 @@ const Compras = ({ addToCart, cart, setCart }) => {
             <thead>
               <tr>
                 <th>Nit</th>
-                <th>Cliente</th>
+                <th>Proveedor</th>
                 <th>Sucursal</th>
                 <th>Dirección de Entrega</th>
                 <th>Contacto</th>
