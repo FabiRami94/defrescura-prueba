@@ -1,12 +1,12 @@
 
 import ProductList from "../ProductList/ProductList";
 
-const Frutas = () => {
+const Frutas = ({addToCart}) => {
     
     return(
-        <div>
-            <h1>Soy Frutas</h1>
-            <ProductList></ProductList>
+        <div style={{display: 'flex', flexDirection: 'column', textAlign: 'center'}}>
+            <h1>FRUTAS</h1>
+            <ProductList addToCart={addToCart} category="fruta"></ProductList>
         </div>
     );
 };
