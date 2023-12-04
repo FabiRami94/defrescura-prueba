@@ -1,6 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import styles from "./ProductList.module.css";
+import {SuccessAddCart} from '../../assets/modals/modals.js';
 
 const ProductList = ({ category, addToCart }) => {
   
@@ -39,7 +41,7 @@ const ProductList = ({ category, addToCart }) => {
                 <td>{product.name}</td>
                 <td>{product.price}</td>
                 <td>
-                  <button onClick={() => addToCart(product)}>Añadir al carrito</button>
+                  <button className={styles.GeneralButton} onClick={() => {addToCart(product), SuccessAddCart()}}>Añadir al carrito</button>
                 </td>
               </tr>
             ))}

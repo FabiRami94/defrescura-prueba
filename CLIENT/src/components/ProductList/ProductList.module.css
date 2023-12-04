@@ -1,0 +1,21 @@
+
+.GeneralButton{
+    background-color: rgb(151, 206, 76, 0.8);
+    color: white;
+    font-size: 16px; 
+    padding: 5px;
+    border-color: rgb(89, 64, 15);
+    border-radius: 10px; 
+    cursor: pointer;
+    margin: 10px;
+}
+
+    @media(max-width: 768px){
+        .GeneralButton{
+            font-size: 12px;
+        }
+    }
+
+.GeneralButton:hover{
+    background-color: rgb(222, 222, 82);
+}
