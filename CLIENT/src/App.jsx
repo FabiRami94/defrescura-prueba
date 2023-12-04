@@ -14,19 +14,21 @@ function App() {
 
   const [cart, setCart] = useState([]);
 
-  const addToCart = (product) => {
+  const addToCart = (productsToAdd) => {
+    const updatedCart = [...cart];
   
-    const existingProduct = cart.find(item => item.id === product.id);
-
-    if (existingProduct) {
-      const updatedCart = cart.map(item =>
-        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-      );
-      setCart(updatedCart);
-    } else {
-      setCart([...cart, { ...product, quantity: 1 }]);
-    }
-    console.log(cart)
+    productsToAdd.forEach((product) => {
+      const existingProduct = updatedCart.find((item) => item.id === product.id);
+  
+      if (existingProduct) {
+        existingProduct.quantity += 1;
+      } else {
+        updatedCart.push({ ...product, quantity: 1 });
+      }
+    });
+  
+    setCart(updatedCart);
+    console.log(updatedCart);
   };
 
   return (

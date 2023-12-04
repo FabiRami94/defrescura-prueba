@@ -32,13 +32,13 @@ const Inicio = () => {
                 speed={3000}  
                 onSwiper={(swiper) => (swiperRef.current = swiper)}>
                 <SwiperSlide className={styles.slide1}>
-                    <div className={styles.container}>Slide 1</div>
+                    <div className={styles.container}>Calidad a un super precio</div>
                 </SwiperSlide>
                 <SwiperSlide className={styles.slide2}>
-                    <div className={styles.container}>Slide 2</div>
+                    <div className={styles.container}>Vive saludable</div>
                 </SwiperSlide>
                 <SwiperSlide className={styles.slide3}>
-                    <div className={styles.container}>Slide 3</div>
+                    <div className={styles.container}>Del campo a tu mesa</div>
                 </SwiperSlide>
             </Swiper>
             <Footer></Footer>

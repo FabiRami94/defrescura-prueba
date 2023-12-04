@@ -1,3 +1,4 @@
+
 import styles from './Compras.module.css';
 import React, { useState } from 'react';
 import { SuccessDeleteCart } from '../../assets/modals/modals.js';
@@ -14,6 +15,13 @@ const Compras = ({ addToCart, cart, setCart }) => {
     const updatedCart = cart.map(item =>
       item.id === productId ? { ...item, quantity: Math.max(item.quantity - 1, 0) } : item
     ).filter(item => item.quantity > 0);
+    setCart(updatedCart);
+  };
+
+  const increaseQuantity = (productId) => {
+    const updatedCart = cart.map(item =>
+      item.id === productId ? { ...item, quantity: item.quantity + 1 } : item
+    );
     setCart(updatedCart);
   };
 
@@ -84,7 +92,7 @@ const Compras = ({ addToCart, cart, setCart }) => {
                       <td>
                         <button className={styles.GeneralButton} onClick={() => decreaseQuantity(item.id)}>-</button>
                         {item.quantity}
-                        <button className={styles.GeneralButton} onClick={() => addToCart(item)}>+</button>
+                        <button className={styles.GeneralButton} onClick={() => increaseQuantity(item.id)}>+</button>
                       </td>
                       <td>{item.price * item.quantity}</td>
                       <td>
