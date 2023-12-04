@@ -34,3 +34,9 @@
   .confirmationTable th {
     background-color: red; 
   }
+
+  @media(max-width: 768px){
+    .confirmationTable th, .confirmationTable td{
+        font-size: 8px;
+    }
+}
