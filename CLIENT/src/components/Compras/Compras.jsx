@@ -2,6 +2,7 @@
 import styles from './Compras.module.css';
 import React, { useState } from 'react';
 import { SuccessDeleteCart } from '../../assets/modals/modals.js';
+import { FaShoppingCart } from "react-icons/fa";
 
 const Compras = ({ addToCart, cart, setCart }) => {
   const [confirmation, setConfirmation] = useState(false);
@@ -137,6 +138,7 @@ const Compras = ({ addToCart, cart, setCart }) => {
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
           <p>Total: {calculateTotal()}</p>
           <button className={styles.GeneralButton} onClick={handleConfirmPurchase}>Confirmar Compra</button>
+          <p>Items: <FaShoppingCart /> {cart.length}</p>
         </div>
       )}
     </div>
