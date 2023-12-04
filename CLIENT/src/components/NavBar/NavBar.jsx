@@ -23,7 +23,7 @@ const NavBar = () => {
                     alt="nombre" 
                     className={styles.Logo} /> 
                 <div>   
-                    <NavLink to={"/inicio"} onClick={() => handleButtonClick("button1")}>
+                    <NavLink to={"/"} onClick={() => handleButtonClick("button1")}>
                         <button className={(
                             activeButton === "button1" ? 
                             styles.GeneralButtonActive : 

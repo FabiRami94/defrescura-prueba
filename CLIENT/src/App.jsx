@@ -34,7 +34,7 @@ function App() {
       <div>
         <header style={{position: 'sticky', top: '0', zIndex: '2'}}><NavBar></NavBar></header>
         <Routes>
-          <Route path = '/inicio' element = {<Inicio></Inicio>}></Route> 
+          <Route path = '/' element = {<Inicio></Inicio>}></Route> 
           <Route path='/frutas' element = {<Frutas addToCart={addToCart}></Frutas>}></Route>   
           <Route path='/verduras' element = {<Verduras addToCart={addToCart}></Verduras>}></Route>
           <Route path='/compras' element = {<Compras cart={cart} setCart={setCart} addToCart={addToCart}></Compras>}></Route>
