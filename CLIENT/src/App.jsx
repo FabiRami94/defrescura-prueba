@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import Inicio from './components/Inicio/Inicio';
 import NavBar from './components/NavBar/NavBar';
 import Frutas from './components/Frutas/Frutas';
-import Compras from './components/compras/Compras';
+import Compras from './components/Compras/Compras';
 import Verduras from './components/Verduras/Verduras';
 import axios from 'axios';
 axios.defaults.baseURL = 'http://localhost:3001/';
