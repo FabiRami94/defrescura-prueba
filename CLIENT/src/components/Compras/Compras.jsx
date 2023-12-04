@@ -1,5 +1,6 @@
 
 import styles from './Compras.module.css';
+import React from 'react';
 
 const Compras = ({addToCart, cart, setCart}) => {
   
