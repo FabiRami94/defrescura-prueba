@@ -8,7 +8,7 @@ import Frutas from './components/Frutas/Frutas';
 import Compras from './components/Compras/Compras';
 import Verduras from './components/Verduras/Verduras';
 import axios from 'axios';
-axios.defaults.baseURL = 'https://defrescura-prueba-production.up.railway.app/';
+axios.defaults.baseURL = 'http://localhost:3001/';
 
 function App() {
 
