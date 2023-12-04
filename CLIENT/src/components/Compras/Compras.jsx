@@ -40,8 +40,10 @@ const Compras = ({ addToCart, cart, setCart }) => {
         <table>
           <thead>
             <tr>
+              <th>ID</th>
               <th>Nombre</th>
               <th>Precio</th>
+              <th>Unidad de Medida</th>
               <th>Cantidad</th>
               <th>Total</th>
             </tr>
@@ -49,8 +51,10 @@ const Compras = ({ addToCart, cart, setCart }) => {
           <tbody>
             {cart.map(item => (
               <tr key={item.id}>
+                <td>{item.id}</td>
                 <td>{item.name}</td>
                 <td>{item.price}</td>
+                <td>{item.unidadMedida}</td>
                 <td>{item.quantity}</td>
                 <td>{item.price * item.quantity}</td>
               </tr>

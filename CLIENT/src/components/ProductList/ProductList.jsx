@@ -37,8 +37,10 @@ const ProductList = ({ category, addToCart }) => {
             <thead>
               <tr>
                 <th>Seleccionar</th>
+                <th>Id</th>
                 <th>Nombre</th>
                 <th>Precio</th>
+                <th>Unidad de Medida</th>
               </tr>
             </thead>
             <tbody>
@@ -51,8 +53,10 @@ const ProductList = ({ category, addToCart }) => {
                       onChange={() => handleCheckboxChange(product.id)}
                     />
                   </td>
+                  <td>{product.id}</td>
                   <td>{product.name}</td>
-                  <td>{product.price}</td>    
+                  <td>{product.price}</td> 
+                  <td>{product.unidadMedida}</td>    
                 </tr>
               ))}
             </tbody>
