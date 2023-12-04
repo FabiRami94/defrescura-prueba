@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styles from "./ProductList.module.css";
 import { SuccessAddCart } from '../../assets/modals/modals.js';
 import ProductsList from '../../assets/ProductsList.js';
+import { Link } from 'react-router-dom';
 
 const ProductList = ({ category, addToCart }) => {
   const [selectedProducts, setSelectedProducts] = useState({});
@@ -62,12 +63,14 @@ const ProductList = ({ category, addToCart }) => {
             </tbody>
           </table>
         </>
-      )} 
+      )}
+      <Link to={'/compras'}>
         <button
           className={styles.GeneralButton}
           onClick={handleAddToCart}>
-            Añadir al carrito
+            Generar Compra
         </button>
+      </Link> 
     </div>
   );
 };
