@@ -19,3 +19,18 @@
 .GeneralButton:hover{
     background-color: rgb(222, 222, 82);
 }
+
+.confirmationTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .confirmationTable th, .confirmationTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .confirmationTable th {
+    background-color: red; 
+  }

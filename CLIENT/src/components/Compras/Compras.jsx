@@ -37,7 +37,30 @@ const Compras = ({ addToCart, cart, setCart }) => {
     return (
       <div>
         <h2>Detalle de la Compra</h2>
-        <table>
+        <table className={styles.confirmationTable}>
+          <thead>
+            <tr>
+              <th>Nit</th>
+              <th>Cliente</th>
+              <th>Sucursal</th>
+              <th>Dirección de Entrega</th>
+              <th>Contacto</th>
+              <th>Forma de Pago</th>
+            </tr>
+          </thead>
+          <tbody>    
+              <tr>
+                <td>1072******</td>
+                <td>Fabián Ramírez</td>
+                <td>Sede 1</td>
+                <td>Calle siempre viva 123</td>
+                <td>3001234567</td>
+                <td>Contado</td>
+              </tr>
+          </tbody>
+        </table>
+        <hr></hr>
+        <table className={styles.confirmationTable}>
           <thead>
             <tr>
               <th>ID</th>
